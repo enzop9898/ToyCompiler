@@ -1,0 +1,60 @@
+
+proc somma (int n, m)int:
+    int result := 0;
+    result:=n+m;
+    -> result
+corp;
+
+proc differenza (int n, m)int:
+    int result := 0;
+    string x := "ciao a tutti";
+    result:=n-m;
+    -> result
+corp;
+
+proc moltiplicazione (int n, m)int:
+    int result := 0;
+    result:=n*m;
+    -> result
+corp;
+
+proc divisione(int n, m)int:
+    int result := 0;
+    result:=n/m;
+    -> result
+corp;
+
+proc main()void:
+    int s,d,m,di,first,secondo,scelta := 0;
+    while
+                write("Menù\n");
+             	write("Scegliere l'operazione aritmetica che si vuole eseguire\n");
+             	write("1. Somma\n");
+             	write("2. Sottrazione\n");
+             	write("3. Moltiplicazione\n");
+             	write("4. Divisione\n");
+             	write("5. EXIT");
+             	write("\n Prego effettuare la scelta");
+             	readln(scelta);
+             	write("Dammi il prim operando");
+             	readln(first);
+             	write("Dammi il secondo operando");
+             	readln(secondo);
+    -> scelta<>5
+    do
+    	if scelta = 1 then
+    	    s:=somma(first,secondo);
+    	    write(s);
+    	         elif scelta = 2 then
+    	            d:=differenza(first,secondo);
+    	            write(d);
+    	                elif scelta = 3 then
+    	                    m:=moltiplicazione(first,secondo);
+    	                    write(m);
+    	                        elif scelta = 4 then
+    	                            di:=divisione(first,secondo);
+    	                            write(di);
+        fi;
+    od;
+    ->
+corp;

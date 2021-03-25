@@ -1,0 +1,30 @@
+/*
+ * compute factorials, the slow recursive way.
+ */
+int n := 0;
+
+proc factorial(int n) int:
+    int result := 0;
+    if n = 0 then
+	    result := 1;
+    else
+	    result := n * factorial(n - 1);
+    fi;
+    -> result
+corp;
+
+/* ignore this comment */
+
+proc main() void:
+    int a := ifexpr ifexpr true then 5 else 0 >= 0 then 3 else 1;
+    write (a, "\n");
+    write (ifexpr ifexpr true then 5 else 0 >= 0 then 30 else 1, "\n");
+    while
+	    write("Enter n, or >= 10 to exit: ");
+	    readln(n);
+	    -> n < 10
+    do
+	    write("Factorial of ", n, " is ", factorial(n), "\n");
+    od;
+    ->
+corp;

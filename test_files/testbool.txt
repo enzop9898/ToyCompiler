@@ -1,0 +1,16 @@
+proc x(int a, b) bool:
+    bool c := false;
+
+    if a > b then
+        c := true;
+    fi;
+    -> c
+corp;
+
+proc main() void:
+    int n := 10, k := 8;
+    bool c := false;
+    c := x(n,k);
+    write("RESULT: ", c);
+    ->
+corp;

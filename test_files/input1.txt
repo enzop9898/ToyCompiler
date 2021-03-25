@@ -1,0 +1,14 @@
+string _nome_01 := "MichelePositivo";
+
+proc multAddDiff ()int, int, int :
+
+    int primo, secondo, mul, add, diff;
+    float prova;
+    write("Inserire il primo argomento:\n");
+    read(primo);
+    write("Inserire il secondo argomento:\n");
+    read(secondo);
+    mul := primo*secondo;
+    prova := -5;
+    -> mul
+corp;
